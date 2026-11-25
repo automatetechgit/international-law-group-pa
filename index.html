@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="International Law Group PA provides immigration, personal injury, real estate, wills, and trusts counsel in Sebring, Florida.">
-  <title>International Law Group PA | Sebring, Florida</title>
+  <meta name="description" content="Immigration-focused legal counsel from International Law Group PA, based in Sebring and available for virtual consultations.">
+  <title>Immigration Lawyer in Sebring, FL | International Law Group PA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
@@ -61,9 +61,13 @@
     .section-header { max-width:710px; margin-bottom:3rem; }
     .section h2 { margin:.7rem 0 1rem; font:600 clamp(2.2rem,4vw,4rem)/1.04 'Playfair Display',serif; letter-spacing:-.045em; }
     .section-intro { color:var(--muted); max-width:630px; }
-    .practice-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+    .practice-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
     .practice { min-height:320px; padding:2rem; background:#fff; display:flex; flex-direction:column; justify-content:space-between; transition:.25s; }
     .practice:hover { background:#f4efe5; }
+    .practice.primary { grid-column:span 3; min-height:285px; background:var(--ink); color:#fff; }
+    .practice.primary:hover { background:var(--ink-2); }
+    .practice.primary p { color:#d9e1eb; max-width:460px; }
+    .practice.primary .practice-index,.practice.primary .text-link { color:var(--gold-light); }
     .practice-index { color:var(--gold); font:500 .7rem 'DM Mono',monospace; letter-spacing:.1em; }
     .practice h3 { margin:1.9rem 0 .8rem; font:600 1.6rem/1.1 'Playfair Display',serif; letter-spacing:-.03em; }
     .practice p { color:var(--muted); font-size:.85rem; }
@@ -103,8 +107,8 @@
     footer p, footer a { color:#c3ceda; font-size:.82rem; }
     footer a:hover { color:#fff; }
     .footer-bottom { display:flex; justify-content:space-between; gap:1rem; margin-top:3rem; padding-top:1.3rem; border-top:1px solid rgba(255,255,255,.15); color:#8d9aac; font-size:.68rem; }
-    @media (max-width:860px) { .nav { min-height:72px; padding:0 1.15rem; } .navlinks { display:none; position:absolute; left:0; right:0; top:72px; padding:1rem 1.15rem 1.4rem; flex-direction:column; align-items:stretch; background:var(--paper); border-bottom:1px solid var(--line); } .navlinks.open { display:flex; } .menu-button { display:block; } .hero-grid,.difference-inner,.consult-inner { grid-template-columns:1fr; gap:3rem; } .hero-grid { padding:5rem 1.3rem 4.7rem; } .section { padding:5rem 1.3rem; } .hero-card { max-width:520px; } .practice-grid { grid-template-columns:1fr 1fr; } .difference-inner,.consult-inner { padding:5rem 1.3rem; } .trust-inner { grid-template-columns:1fr; padding:1rem 1.3rem; } .trust-item { justify-content:flex-start; border-right:0; border-bottom:1px solid rgba(255,255,255,.18); } .trust-item:last-child { border-bottom:0; } }
-    @media (max-width:540px) { h1 { font-size:3.15rem; } .practice-grid { grid-template-columns:1fr; } .practice { min-height:245px; } form { grid-template-columns:1fr; } .field.full { grid-column:auto; } .footer-top { grid-template-columns:1fr; gap:2rem; } .footer-bottom { flex-direction:column; } .hero-actions .button { width:100%; } }
+    @media (max-width:860px) { .nav { min-height:72px; padding:0 1.15rem; } .navlinks { display:none; position:absolute; left:0; right:0; top:72px; padding:1rem 1.15rem 1.4rem; flex-direction:column; align-items:stretch; background:var(--paper); border-bottom:1px solid var(--line); } .navlinks.open { display:flex; } .menu-button { display:block; } .hero-grid,.difference-inner,.consult-inner { grid-template-columns:1fr; gap:3rem; } .hero-grid { padding:5rem 1.3rem 4.7rem; } .section { padding:5rem 1.3rem; } .hero-card { max-width:520px; } .practice-grid { grid-template-columns:1fr 1fr; } .practice.primary { grid-column:span 2; } .practice:last-child { grid-column:span 2; } .difference-inner,.consult-inner { padding:5rem 1.3rem; } .trust-inner { grid-template-columns:1fr; padding:1rem 1.3rem; } .trust-item { justify-content:flex-start; border-right:0; border-bottom:1px solid rgba(255,255,255,.18); } .trust-item:last-child { border-bottom:0; } }
+    @media (max-width:540px) { h1 { font-size:3.15rem; } .practice-grid { grid-template-columns:1fr; } .practice,.practice.primary,.practice:last-child { min-height:245px; grid-column:auto; } form { grid-template-columns:1fr; } .field.full { grid-column:auto; } .footer-top { grid-template-columns:1fr; gap:2rem; } .footer-bottom { flex-direction:column; } .hero-actions .button { width:100%; } }
   </style>
 </head>
 <body>
@@ -123,26 +127,26 @@
     <section class="hero" id="top">
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">Based in Sebring · Accessible Beyond It</div>
-          <h1>Legal guidance when <em>life</em> gets complicated.</h1>
-          <p class="hero-copy">Based in Sebring and available to connect virtually, International Law Group PA delivers compassionate, thoroughly prepared representation in immigration, personal injury, real estate, wills, and trusts matters.</p>
+          <div class="eyebrow">Immigration counsel · Based in Sebring</div>
+          <h1>Immigration counsel for your <em>next chapter.</em></h1>
+          <p class="hero-copy">International Law Group PA is an immigration-focused firm based in Sebring and available to connect virtually. We provide compassionate, thoroughly prepared guidance when the next step matters most.</p>
           <div class="hero-actions"><a class="button" href="tel:+1-863-402-9194">Call (863) 402-9194</a><a class="button alt" href="#consultation">Request a consultation</a></div>
           <p class="hero-note"><strong>23+ years of experience.</strong> In-person, virtual, weekend, and Sunday appointments make it easier to connect from Sebring, across Florida, or out of state.</p>
         </div>
         <aside class="hero-card" aria-label="Consultation prompt"><div class="card-label">A straightforward next step</div><h2>Start with a conversation.</h2><p>Tell us how to reach you and which area of law brings you here. We will follow up to discuss scheduling a consultation.</p><a class="phone" href="tel:+1-863-402-9194">(863) 402-9194</a></aside>
       </div>
     </section>
-    <section class="trust" aria-label="Firm highlights"><div class="trust-inner"><div class="trust-item"><span class="trust-num">23+</span> years of legal experience</div><div class="trust-item"><span class="trust-num">5.0</span> rating shown on current firm site</div><div class="trust-item"><span class="trust-num">FL</span> locally owned Sebring firm</div></div></section>
+    <section class="trust" aria-label="Firm highlights"><div class="trust-inner"><div class="trust-item"><span class="trust-num">23+</span> years of legal experience</div><div class="trust-item"><span class="trust-num">2009</span> serving clients since</div><div class="trust-item"><span class="trust-num">Virtual</span> consultations available</div></div></section>
     <section class="section" id="practice-areas">
-      <div class="section-header"><div class="eyebrow">How we help</div><h2>Focused counsel across the legal matters that matter most.</h2><p class="section-intro">Every case deserves direct communication, careful preparation, and legal guidance built around the person living through it.</p></div>
+      <div class="section-header"><div class="eyebrow">How we help</div><h2>Immigration is our primary focus. Support is here for life’s other legal needs, too.</h2><p class="section-intro">Direct communication, careful preparation, and guidance built around the person living through the situation—beginning with immigration matters.</p></div>
       <div class="practice-grid">
-        <article class="practice"><div><span class="practice-index">01</span><h3>Immigration Law</h3><p>Guidance with family petitions, deportation and removal matters, asylum, citizenship, and related immigration concerns.</p></div><a class="text-link" href="#consultation">Discuss immigration</a></article>
+        <article class="practice primary"><div><span class="practice-index">Primary focus</span><h3>Immigration Law</h3><p>Guidance for people and families navigating immigration concerns, with the direct communication and careful preparation every next step deserves.</p></div><a class="text-link" href="#consultation">Discuss immigration</a></article>
         <article class="practice"><div><span class="practice-index">02</span><h3>Personal Injury</h3><p>Representation for accidents, slips and falls, medical malpractice, wrongful death, and injury claims.</p></div><a class="text-link" href="#consultation">Discuss an injury</a></article>
         <article class="practice"><div><span class="practice-index">03</span><h3>Real Estate Law</h3><p>Legal support for deeds, foreclosure defenses, and other real estate matters where protection matters.</p></div><a class="text-link" href="#consultation">Discuss real estate</a></article>
         <article class="practice"><div><span class="practice-index">04</span><h3>Wills & Trusts</h3><p>Planning support for wills, trusts, powers of attorney, and documents that reflect your wishes.</p></div><a class="text-link" href="#consultation">Discuss planning</a></article>
       </div>
     </section>
-    <section class="difference" id="about"><div class="difference-inner"><div><div class="eyebrow">The firm</div><p class="quote">Compassionate representation begins with listening—and is backed by serious preparation.</p></div><div class="facts"><div class="fact"><span>01</span><div><h3>Experience with a personal approach</h3><p>Attorney Karlene Gray Dawkins is a Magna Cum Laude graduate of Nova Southeastern University School of Law and has served Florida residents for over 23 years.</p></div></div><div class="fact"><span>02</span><div><h3>Flexible appointments</h3><p>Virtual, weekend, Sunday, and emergency appointments are available so legal questions do not have to wait for a convenient moment.</p></div></div><div class="fact"><span>03</span><div><h3>A local firm with broad perspective</h3><p>International Law Group PA serves the Sebring area with counsel spanning individual, family, property, and injury-related legal needs.</p></div></div></div></div></section>
+    <section class="difference" id="about"><div class="difference-inner"><div><div class="eyebrow">The firm</div><p class="quote">Compassionate representation begins with listening—and is backed by serious preparation.</p></div><div class="facts"><div class="fact"><span>01</span><div><h3>Immigration-focused counsel</h3><p>Immigration is the principal focus of International Law Group PA’s practice, with guidance centered on the person and family behind every legal question.</p></div></div><div class="fact"><span>02</span><div><h3>Serving clients since 2009</h3><p>Attorney Karlene Gray Dawkins brings more than 23 years of legal experience to the work that matters to clients and their families.</p></div></div><div class="fact"><span>03</span><div><h3>Sebring-based. Accessible beyond it.</h3><p>Meet in person in Sebring or connect virtually from Wauchula, Arcadia, elsewhere in Florida, or out of state when appropriate.</p></div></div></div></div></section>
     <section class="consult" id="consultation"><div class="consult-inner"><div><div class="eyebrow">Request a consultation</div><h2>We’ll help you take the next step.</h2><p>Use this form to request a call or consultation. For immediate help, call <a href="tel:+1-863-402-9194" style="color:#f0d99f;text-decoration:underline">(863) 402-9194</a>.</p></div><form id="consultation-form"><div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email"></div><div class="field"><label for="matter">What can we help with?</label><select id="matter" name="matter" required><option value="">Select one</option><option>Immigration Law</option><option>Personal Injury</option><option>Real Estate Law</option><option>Wills & Trusts</option><option>Another Legal Matter</option></select></div><div class="field full"><label for="note">Best time to reach you (optional)</label><textarea id="note" name="note" placeholder="Example: Weekday afternoons. Please do not include confidential case details here."></textarea></div><p class="privacy"><strong>Privacy note:</strong> Do not submit confidential facts or documents through this form. Sending this request does not create an attorney-client relationship.</p><button class="button" type="submit">Prepare consultation request</button><p class="form-result" id="form-result" role="status"></p></form></div></section>
     <section class="section" id="contact"><div class="section-header"><div class="eyebrow">Visit or call</div><h2>Let’s talk about your next step.</h2><p class="section-intro"><strong>Sebring office:</strong> 1570 Lakeview Dr., Suite No. 8, Sebring, FL 33870 · Monday–Friday, 10:00 AM–6:00 PM.<br><strong>Wauchula office:</strong> Sunday, 10:00 AM–6:00 PM · Available by appointment.</p><div class="hero-actions"><a class="button" href="tel:+1-863-402-9194">Call the office</a><a class="button alt" href="mailto:intlawgroup@gmail.com">Email the firm</a></div></div></section>
   </main>
