@@ -1,0 +1,6 @@
+const menuButton=document.querySelector('.menu-button');
+const menu=document.querySelector('.nav-links');
+if(menuButton&&menu){menuButton.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'Close':'Menu';});}
+document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+const form=document.querySelector('#consultation-form');
+if(form){form.addEventListener('submit',event=>{event.preventDefault();const f=new FormData(form);const method=[...form.querySelectorAll('input[name="contact-method"]:checked')].map(i=>i.value).join(', ')||'No preference';const body=[`Name: ${f.get('name')}`,`Phone: ${f.get('phone')}`,`Email: ${f.get('email')||'Not provided'}`,`Practice area: ${f.get('matter')}`,`Preferred contact: ${method}`,`Best time / non-confidential note: ${f.get('note')||'Not provided'}`].join('\r\n');const result=document.querySelector('#form-result');result.textContent='Your email application is being opened with this request. If it does not open, email intlawgroup@gmail.com or call the office.';result.classList.add('show');window.location.href=`mailto:intlawgroup@gmail.com?subject=${encodeURIComponent('Consultation Request — '+f.get('matter'))}&body=${encodeURIComponent(body)}`;});}
